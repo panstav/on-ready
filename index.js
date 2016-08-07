@@ -6,7 +6,7 @@ function onReady(fn){
 
 	if (document.addEventListener) return document.addEventListener('DOMContentLoaded', fn);
 
-	document.attachEvent('onreadystatechange', () => {
+	document.attachEvent('onreadystatechange', function (){
 		if (document.readyState != 'loading') fn();
 	});
 
